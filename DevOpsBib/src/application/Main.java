@@ -1,5 +1,7 @@
 package application;
 	
+
+import Controler.Control;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -7,7 +9,10 @@ import javafx.scene.layout.BorderPane;
 
 
 public class Main extends Application {
-	@Override
+	
+	BorderPane root = new BorderPane();
+	Control control =  new Control(root);
+	Scene scene;
 	public void start(Stage primaryStage) {
 		try {
 			BorderPane root = new BorderPane();
